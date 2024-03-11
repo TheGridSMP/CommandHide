@@ -20,6 +20,11 @@ public record Command(int priority, Operation operation, String context) {
 
     public static Command parse(int priority, String input) {
         Operation sign = Operation.fromChar(input.charAt(1));
-        return new Command(priority, sign, input.substring(3));
+        String context = input.substring(3);
+
+        if (context.equals("*"))
+            priority = 0;
+
+        return new Command(priority, sign, context);
     }
 }
