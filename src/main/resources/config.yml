@@ -1,0 +1,13 @@
+groups:
+  # DO NOT remove the default group, or shit will break
+  default:
+    priority: 0
+    commands:
+      - '[-]*'
+      - '[+]msg'
+  op:
+    priority: 99
+    commands:
+      - '[+]*'
+    inherits:
+      - default

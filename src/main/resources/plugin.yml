@@ -1,4 +1,4 @@
-name: plugin-template
+name: CommandHide
 version: '${version}'
-main: the.grid.smp.plugintemplate.PluginTemplate
+main: the.grid.smp.commandhide.CommandHide
 api-version: '1.20'
